@@ -33,9 +33,9 @@ int main() {
 
     cout << endl << endl << "Game finished, now you can see your teams" << endl;
 
-    cout << "---player1 (terrorists)---";
+    cout << "---player1 (terrorists)---" << endl;
     player1.Info();
 
-    cout << "---player2 (counter-terrorists)---";
+    cout << endl << "---player2 (counter-terrorists)---" << endl;
     player2.Info();
 }

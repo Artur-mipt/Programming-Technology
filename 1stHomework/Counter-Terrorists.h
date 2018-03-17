@@ -41,4 +41,3 @@ void CTerrorists::Info() {
     std::cout << "doctors: " << cDoctors.size() << std::endl;
     std::cout << "snipers: " << cSnipers.size() << std::endl;
 }
-

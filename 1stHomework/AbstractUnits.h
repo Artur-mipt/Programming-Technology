@@ -28,5 +28,3 @@ public:
     std::string pistol;
     virtual void heal() {};
 };
-
-

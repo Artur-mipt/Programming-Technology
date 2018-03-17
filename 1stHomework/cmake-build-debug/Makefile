@@ -48,10 +48,10 @@ RM = /home/artur/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/artur/strategy
+CMAKE_SOURCE_DIR = "/home/artur/Programming Technology/1stHomework"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/artur/strategy/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/artur/Programming Technology/1stHomework/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/artur/strategy/cmake-build-debug/CMakeFiles /home/artur/strategy/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artur/Programming Technology/1stHomework/cmake-build-debug/CMakeFiles" "/home/artur/Programming Technology/1stHomework/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/artur/strategy/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artur/Programming Technology/1stHomework/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named strategy
+# Target rules for targets named 1stHomework
 
 # Build rule for target.
-strategy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 strategy
-.PHONY : strategy
+1stHomework: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1stHomework
+.PHONY : 1stHomework
 
 # fast build rule for target.
-strategy/fast:
-	$(MAKE) -f CMakeFiles/strategy.dir/build.make CMakeFiles/strategy.dir/build
-.PHONY : strategy/fast
+1stHomework/fast:
+	$(MAKE) -f CMakeFiles/1stHomework.dir/build.make CMakeFiles/1stHomework.dir/build
+.PHONY : 1stHomework/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/strategy.dir/build.make CMakeFiles/strategy.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/1stHomework.dir/build.make CMakeFiles/1stHomework.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/strategy.dir/build.make CMakeFiles/strategy.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/1stHomework.dir/build.make CMakeFiles/1stHomework.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/strategy.dir/build.make CMakeFiles/strategy.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/1stHomework.dir/build.make CMakeFiles/1stHomework.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... strategy"
+	@echo "... 1stHomework"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -54,45 +54,45 @@ RM = /home/artur/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/artur/strategy
+CMAKE_SOURCE_DIR = "/home/artur/Programming Technology/1stHomework"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/artur/strategy/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/artur/Programming Technology/1stHomework/cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/strategy.dir
+# Target rules for target CMakeFiles/1stHomework.dir
 
 # All Build rule for target.
-CMakeFiles/strategy.dir/all:
-	$(MAKE) -f CMakeFiles/strategy.dir/build.make CMakeFiles/strategy.dir/depend
-	$(MAKE) -f CMakeFiles/strategy.dir/build.make CMakeFiles/strategy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/artur/strategy/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target strategy"
-.PHONY : CMakeFiles/strategy.dir/all
+CMakeFiles/1stHomework.dir/all:
+	$(MAKE) -f CMakeFiles/1stHomework.dir/build.make CMakeFiles/1stHomework.dir/depend
+	$(MAKE) -f CMakeFiles/1stHomework.dir/build.make CMakeFiles/1stHomework.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/artur/Programming Technology/1stHomework/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target 1stHomework"
+.PHONY : CMakeFiles/1stHomework.dir/all
 
 # Include target in all.
-all: CMakeFiles/strategy.dir/all
+all: CMakeFiles/1stHomework.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/strategy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/artur/strategy/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/strategy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/artur/strategy/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/strategy.dir/rule
+CMakeFiles/1stHomework.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artur/Programming Technology/1stHomework/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/1stHomework.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artur/Programming Technology/1stHomework/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/1stHomework.dir/rule
 
 # Convenience name for target.
-strategy: CMakeFiles/strategy.dir/rule
+1stHomework: CMakeFiles/1stHomework.dir/rule
 
-.PHONY : strategy
-
-# clean rule for target.
-CMakeFiles/strategy.dir/clean:
-	$(MAKE) -f CMakeFiles/strategy.dir/build.make CMakeFiles/strategy.dir/clean
-.PHONY : CMakeFiles/strategy.dir/clean
+.PHONY : 1stHomework
 
 # clean rule for target.
-clean: CMakeFiles/strategy.dir/clean
+CMakeFiles/1stHomework.dir/clean:
+	$(MAKE) -f CMakeFiles/1stHomework.dir/build.make CMakeFiles/1stHomework.dir/clean
+.PHONY : CMakeFiles/1stHomework.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/1stHomework.dir/clean
 
 .PHONY : clean
 
