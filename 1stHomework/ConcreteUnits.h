@@ -3,18 +3,20 @@
 
 // класс подрывника (уникальный для террористов)
 // у него есть пистолет и он может заложить бомбу
-class BombHostage {
-    int healthPoints;
-    std::string pistol;
+class BombHostage : public Unit {
+public:
+    int healthPoints = 80;
+    std::string pistol = "Desert Eagle";
     virtual void plantTheBomb() {};
 };
 
 
 // класс сапёра (уникальный для контр-террористов)
 // у него есть пистолет и он умеет обезвреживать бомбу
-class Sapper {
-    int healthPoints;
-    std::string pistol;
+class Sapper : public Unit {
+public:
+    int healthPoints = 80;
+    std::string pistol = "Glock";
     virtual void defuseTheBomb() {};
 };
 
