@@ -1,3 +1,5 @@
+Код-стайл от ABBYY: https://drive.google.com/file/d/0B6oYnrxwl0UcLTRDVHNxVGxJeUU/view
+
 В папке 1stHomework реализована игра-стратегия для двух игроков.
 
 Суть игры:

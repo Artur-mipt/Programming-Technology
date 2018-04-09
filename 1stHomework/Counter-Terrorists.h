@@ -4,10 +4,10 @@
 #include <vector>
 #include <string>
 
-class CTerrorists {
+class CounterTerrorists {
 public:
-    CTerrorists() = default;
-    ~CTerrorists() = default;
+    CounterTerrorists() = default;
+    ~CounterTerrorists() = default;
     void AddCTerrorist(std::string type);
     void Info();
 
@@ -19,7 +19,7 @@ private:
     CounterCreator creator;
 };
 
-void CTerrorists::AddCTerrorist(std::string type) {
+void CounterTerrorists::AddCTerrorist(std::string type) {
     bool rightName = false;
     if( type == "Sapper" ) {
         sappers.push_back(creator.CreateSapper());
@@ -35,7 +35,7 @@ void CTerrorists::AddCTerrorist(std::string type) {
     }
 }
 
-void CTerrorists::Info() {
+void CounterTerrorists::Info() {
     std::cout << "sappers: " << sappers.size() << std::endl;
     std::cout << "stormers: " << cStormers.size() << std::endl;
     std::cout << "doctors: " << cDoctors.size() << std::endl;

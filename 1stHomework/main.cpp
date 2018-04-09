@@ -17,7 +17,7 @@ int main() {
 
 
     Terrorists player1;
-    CTerrorists player2;
+    CounterTerrorists player2;
 
     for( int i = 0; i < 5; i++ ) {
         cout << endl << endl << "STEP " << i + 1 << endl;
