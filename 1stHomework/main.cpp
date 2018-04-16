@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Counter-Terrorists.h"
-#include "Counter-Terrorists.cpp"
 #include "Terrorists.h"
 #include "PrintInfo.h"
 using namespace std;

@@ -1,8 +1,6 @@
-/*
 #include "Counter-Terrorists.h"
 
 void CounterTerrorists::AddCTerrorist(std::string type) {
-    bool rightName = false;
     if( type == "Sapper" ) {
         sappers.push_back(creator.CreateSapper());
     }
@@ -25,4 +23,3 @@ void CounterTerrorists::Info() {
     std::cout << "doctors: " << cDoctors.size() << std::endl;
     std::cout << "snipers: " << cSnipers.size() << std::endl;
 }
- */
