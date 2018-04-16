@@ -1,23 +1,30 @@
 #pragma once
 #include "AbstractUnits.h"
+using namespace std;
+
 
 // класс подрывника (уникальный для террористов)
 // у него есть пистолет и он может заложить бомбу
 class BombHostage : public Unit {
 public:
-    int healthPoints = 80;
-    std::string pistol = "Desert Eagle";
     virtual void plantTheBomb() {};
+    BombHostage() {
+        weapon.name = "Desert Eagle";
+        weapon.damage = 30;
+        healthPoints = 80;
+    }
 };
-
 
 // класс сапёра (уникальный для контр-террористов)
 // у него есть пистолет и он умеет обезвреживать бомбу
 class Sapper : public Unit {
 public:
-    int healthPoints = 80;
-    std::string pistol = "Glock";
     virtual void defuseTheBomb() {};
+    Sapper() {
+        weapon.name = "Glock";
+        weapon.damage = 30;
+        healthPoints = 80;
+    }
 };
 
 
@@ -26,7 +33,8 @@ class CTStormTrooper : public StormTrooper {
 public:
     CTStormTrooper() {
         healthPoints = 150;
-        assaultRiffle = "M4A1";
+        weapon.name = "M4A1";
+        weapon.damage = 70;
         grenades = 3;
     }
 };
@@ -36,8 +44,11 @@ public:
 class CTSniper : public Sniper {
 public:
     CTSniper() {
+        weapon.name = "Glock";
+        weapon.damage = 30;
         healthPoints = 50;
-        sniperRiffle = "Scout";
+        sniperRiffle.name = "Scout";
+        sniperRiffle.damage = 100;
     }
 };
 
@@ -47,7 +58,8 @@ class CTDoctor : public Doctor {
 public:
     CTDoctor() {
         healthPoints = 50;
-        pistol = "Glock";
+        weapon.name = "Glock";
+        weapon.damage = 30;
     }
     virtual void heal() override {};
 };
@@ -58,7 +70,8 @@ class TStormTrooper : public StormTrooper {
 public:
     TStormTrooper() {
         healthPoints = 150;
-        assaultRiffle = "AK-47";
+        weapon.name = "AK-47";
+        weapon.damage = 70;
         grenades = 3;
     }
 };
@@ -68,8 +81,11 @@ public:
 class TSniper : public Sniper {
 public:
     TSniper() {
+        weapon.name = "Desert Eagle";
+        weapon.damage = 30;
         healthPoints = 50;
-        sniperRiffle = "Awp";
+        sniperRiffle.name = "Awp";
+        sniperRiffle.damage = 100;
     }
 };
 
@@ -79,6 +95,8 @@ class TDoctor : public Doctor {
 public:
     TDoctor() {
         healthPoints = 50;
-        pistol = "Desert Eagle";
+        weapon.name = "Desert Eagle";
+        weapon.damage = 30;
     }
+    virtual void heal() override {};
 };

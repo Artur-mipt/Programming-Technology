@@ -35,6 +35,8 @@ void Terrorists::AddTerrorist(std::string type) {
 }
 
 void Terrorists::Info() {
+    std::cout << std::endl;
+    std::cout << "Terrorists team:" << std::endl;
     std::cout << "bombers: " << bombers.size() << std::endl;
     std::cout << "stormers: " << tStormers.size() << std::endl;
     std::cout << "doctors: " << tDoctors.size() << std::endl;
