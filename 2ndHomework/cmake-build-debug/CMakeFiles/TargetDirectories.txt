@@ -1,3 +1,0 @@
-/home/artur/Programming Technology/2ndHomework/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/artur/Programming Technology/2ndHomework/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/artur/Programming Technology/2ndHomework/cmake-build-debug/CMakeFiles/2ndHomework.dir
