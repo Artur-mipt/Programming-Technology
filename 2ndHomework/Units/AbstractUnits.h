@@ -11,6 +11,9 @@ class Unit {
 public:
     int healthPoints;
     Weapon weapon;
+    int UnitHealth() {
+        return healthPoints;
+    }
 };
 
 // класс штурмовика

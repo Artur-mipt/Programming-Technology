@@ -10,6 +10,7 @@ public:
     ~Terrorists() = default;
     void AddTerrorist(std::string type);
     void Info();
+    void GetHealth();
 
 private:
     std::vector <BombHostage*> bombers;

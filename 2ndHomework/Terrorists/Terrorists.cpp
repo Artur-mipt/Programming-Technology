@@ -15,6 +15,23 @@ void Terrorists::AddTerrorist(std::string type) {
     }
 }
 
+void Terrorists::GetHealth() {
+    int total = 0;
+    for( int i = 0; i < bombers.size(); i++ ) {
+        total += bombers[i]->healthPoints;
+    }
+    for( int i = 0; i < tSnipers.size(); i++ ) {
+        total += tSnipers[i]->healthPoints;
+    }
+    for( int i = 0; i < tDoctors.size(); i++ ) {
+        total += tDoctors[i]->healthPoints;
+    }
+    for( int i = 0; i < tStormers.size(); i++ ) {
+        total += tStormers[i]->healthPoints;
+    }
+    cout << total;
+}
+
 void Terrorists::Info() {
     std::cout << std::endl;
     std::cout << "Terrorists team:" << std::endl;
@@ -22,4 +39,6 @@ void Terrorists::Info() {
     std::cout << "stormers: " << tStormers.size() << std::endl;
     std::cout << "doctors: " << tDoctors.size() << std::endl;
     std::cout << "snipers: " << tSnipers.size() << std::endl;
+    std::cout << "total health of team: ";
+    GetHealth();
 }

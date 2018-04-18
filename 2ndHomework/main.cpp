@@ -27,5 +27,6 @@ int main() {
     player2.AddCTerrorist(s4);
 
     player1.Info();
+    cout << endl << endl;
     player2.Info();
 }

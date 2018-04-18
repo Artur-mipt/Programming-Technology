@@ -10,6 +10,7 @@ public:
     ~CounterTerrorists() = default;
     void AddCTerrorist(std::string type);
     void Info();
+    void GetHealth();
 
 private:
     std::vector <Sapper*> sappers;
