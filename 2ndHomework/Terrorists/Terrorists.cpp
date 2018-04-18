@@ -18,16 +18,16 @@ void Terrorists::AddTerrorist(std::string type) {
 void Terrorists::GetHealth() {
     int total = 0;
     for( int i = 0; i < bombers.size(); i++ ) {
-        total += bombers[i]->healthPoints;
+        total += bombers[i]->UnitHealth();
     }
     for( int i = 0; i < tSnipers.size(); i++ ) {
-        total += tSnipers[i]->healthPoints;
+        total += tSnipers[i]->UnitHealth();
     }
     for( int i = 0; i < tDoctors.size(); i++ ) {
-        total += tDoctors[i]->healthPoints;
+        total += tDoctors[i]->UnitHealth();
     }
     for( int i = 0; i < tStormers.size(); i++ ) {
-        total += tStormers[i]->healthPoints;
+        total += tStormers[i]->UnitHealth();
     }
     cout << total;
 }
