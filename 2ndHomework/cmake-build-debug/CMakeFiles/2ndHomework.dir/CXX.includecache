@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/artur/Programming Technology/2ndHomework/Counter-Terrorists/Counter-Terrorists.cpp
+Counter-Terrorists.h
+/home/artur/Programming Technology/2ndHomework/Counter-Terrorists/Counter-Terrorists.h
+
+/home/artur/Programming Technology/2ndHomework/Counter-Terrorists/Counter-Terrorists.h
+../Creator/Creators.h
+/home/artur/Programming Technology/2ndHomework/Creator/Creators.h
+iostream
+-
+vector
+-
+string
+-
+
+/home/artur/Programming Technology/2ndHomework/Creator/Creators.h
+../Units/ConcreteUnits.h
+/home/artur/Programming Technology/2ndHomework/Units/ConcreteUnits.h
+
+/home/artur/Programming Technology/2ndHomework/Information/PrintInfo.cpp
+PrintInfo.h
+/home/artur/Programming Technology/2ndHomework/Information/PrintInfo.h
+
+/home/artur/Programming Technology/2ndHomework/Information/PrintInfo.h
+iostream
+-
+
+/home/artur/Programming Technology/2ndHomework/Terrorists/Terrorists.cpp
+Terrorists.h
+/home/artur/Programming Technology/2ndHomework/Terrorists/Terrorists.h
+
+/home/artur/Programming Technology/2ndHomework/Terrorists/Terrorists.h
+../Creator/Creators.h
+/home/artur/Programming Technology/2ndHomework/Creator/Creators.h
+iostream
+-
+vector
+-
+string
+-
+
+/home/artur/Programming Technology/2ndHomework/Units/AbstractUnits.h
+string
+-
+
+/home/artur/Programming Technology/2ndHomework/Units/ConcreteUnits.h
+AbstractUnits.h
+/home/artur/Programming Technology/2ndHomework/Units/AbstractUnits.h
+
+/home/artur/Programming Technology/2ndHomework/main.cpp
+iostream
+-
+Counter-Terrorists/Counter-Terrorists.h
+/home/artur/Programming Technology/2ndHomework/Counter-Terrorists/Counter-Terrorists.h
+Terrorists/Terrorists.h
+/home/artur/Programming Technology/2ndHomework/Terrorists/Terrorists.h
+Information/PrintInfo.h
+/home/artur/Programming Technology/2ndHomework/Information/PrintInfo.h
+
