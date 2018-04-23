@@ -11,16 +11,14 @@ class Unit {
 public:
     int healthPoints;
     Weapon weapon;
-    int UnitHealth() {
-        return healthPoints;
-    }
+    virtual int UnitDamage() = 0;
 };
 
 // класс штурмовика
 // помимо очков здоровья у него есть штурмовая винтовка и гранаты
 class StormTrooper : public Unit {
 public:
-    int grenades;
+    int grenades = 3;
 };
 
 

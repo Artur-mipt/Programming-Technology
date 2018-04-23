@@ -10,12 +10,13 @@ public:
     ~CounterTerrorists() = default;
     void AddCTerrorist(std::string type);
     void Info();
-    void GetHealth();
+    void GetDamage();
 
 private:
     std::vector <Sapper*> sappers;
     std::vector <CTStormTrooper*> cStormers;
     std::vector <CTDoctor*> cDoctors;
     std::vector <CTSniper*> cSnipers;
+    std::vector <Unit*> allUnits;
     CounterCreator creator;
 };

@@ -10,12 +10,13 @@ public:
     ~Terrorists() = default;
     void AddTerrorist(std::string type);
     void Info();
-    void GetHealth();
+    void GetDamage();
 
 private:
-    std::vector <BombHostage*> bombers;
-    std::vector <TStormTrooper*> tStormers;
-    std::vector <TDoctor*> tDoctors;
-    std::vector <TSniper*> tSnipers;
+    // std::vector <BombHostage*> bombers;
+    // std::vector <TStormTrooper*> tStormers;
+    // std::vector <TDoctor*> tDoctors;
+    // std::vector <TSniper*> tSnipers;
+    std::vector <Unit*> allUnits;
     TerrCreator creator;
 };

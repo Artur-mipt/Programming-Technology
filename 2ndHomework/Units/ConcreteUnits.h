@@ -13,6 +13,9 @@ public:
         weapon.damage = 30;
         healthPoints = 80;
     }
+    int UnitDamage() override  {
+        return weapon.damage;
+    }
 };
 
 // класс сапёра (уникальный для контр-террористов)
@@ -25,6 +28,9 @@ public:
         weapon.damage = 30;
         healthPoints = 80;
     }
+    int UnitDamage() override  {
+        return weapon.damage;
+    }
 };
 
 
@@ -36,6 +42,9 @@ public:
         weapon.name = "M4A1";
         weapon.damage = 70;
         grenades = 3;
+    }
+    int UnitDamage() override  {
+        return weapon.damage + grenades * 100;
     }
 };
 
@@ -50,6 +59,9 @@ public:
         sniperRiffle.name = "Scout";
         sniperRiffle.damage = 100;
     }
+    int UnitDamage() override  {
+        return weapon.damage + sniperRiffle.damage;
+    }
 };
 
 
@@ -61,7 +73,10 @@ public:
         weapon.name = "Glock";
         weapon.damage = 30;
     }
-    virtual void heal() override {};
+    void heal() override {};
+    int UnitDamage() override  {
+        return weapon.damage;
+    }
 };
 
 
@@ -73,6 +88,9 @@ public:
         weapon.name = "AK-47";
         weapon.damage = 70;
         grenades = 3;
+    }
+    int UnitDamage() override  {
+        return weapon.damage + grenades * 100;
     }
 };
 
@@ -87,6 +105,9 @@ public:
         sniperRiffle.name = "Awp";
         sniperRiffle.damage = 100;
     }
+    int UnitDamage() override  {
+        return weapon.damage + sniperRiffle.damage;
+    }
 };
 
 
@@ -99,4 +120,7 @@ public:
         weapon.damage = 30;
     }
     virtual void heal() override {};
+    int UnitDamage() override  {
+        return weapon.damage;
+    }
 };
