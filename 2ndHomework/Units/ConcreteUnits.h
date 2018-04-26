@@ -13,9 +13,12 @@ public:
         weapon.damage = 30;
         healthPoints = 80;
     }
+
     int UnitDamage() override  {
         return weapon.damage;
     }
+
+    void Upgrade() override {};
 };
 
 // класс сапёра (уникальный для контр-террористов)
@@ -28,9 +31,12 @@ public:
         weapon.damage = 30;
         healthPoints = 80;
     }
-    int UnitDamage() override  {
+
+    int UnitDamage() override {
         return weapon.damage;
     }
+
+    void Upgrade() override {};
 };
 
 
@@ -43,9 +49,12 @@ public:
         weapon.damage = 70;
         grenades = 3;
     }
+
     int UnitDamage() override  {
         return weapon.damage + grenades * 100;
     }
+
+    void Upgrade() override {};
 };
 
 
@@ -59,9 +68,12 @@ public:
         sniperRiffle.name = "Scout";
         sniperRiffle.damage = 100;
     }
+
     int UnitDamage() override  {
         return weapon.damage + sniperRiffle.damage;
     }
+
+    void Upgrade() override {};
 };
 
 
@@ -73,10 +85,14 @@ public:
         weapon.name = "Glock";
         weapon.damage = 30;
     }
+
     void heal() override {};
+
     int UnitDamage() override  {
         return weapon.damage;
     }
+
+    void Upgrade() override {};
 };
 
 
@@ -89,9 +105,12 @@ public:
         weapon.damage = 70;
         grenades = 3;
     }
+
     int UnitDamage() override  {
         return weapon.damage + grenades * 100;
     }
+
+    void Upgrade() override {};
 };
 
 
@@ -105,9 +124,12 @@ public:
         sniperRiffle.name = "Awp";
         sniperRiffle.damage = 100;
     }
+
     int UnitDamage() override  {
         return weapon.damage + sniperRiffle.damage;
     }
+
+    void Upgrade() override {};
 };
 
 
@@ -119,8 +141,12 @@ public:
         weapon.name = "Desert Eagle";
         weapon.damage = 30;
     }
+
     virtual void heal() override {};
+
     int UnitDamage() override  {
         return weapon.damage;
     }
+
+    void Upgrade() override {};
 };

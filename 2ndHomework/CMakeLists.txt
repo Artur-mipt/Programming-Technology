@@ -3,4 +3,4 @@ project(2ndHomework)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(2ndHomework main.cpp Terrorists/Terrorists.cpp Terrorists/Terrorists.h Counter-Terrorists/Counter-Terrorists.cpp Counter-Terrorists/Counter-Terrorists.h Creator/Creators.h Units/AbstractUnits.h Units/ConcreteUnits.h Information/PrintInfo.cpp Information/PrintInfo.h)
+add_executable(2ndHomework main.cpp Terrorists/Terrorists.cpp Terrorists/Terrorists.h Counter-Terrorists/Counter-Terrorists.cpp Counter-Terrorists/Counter-Terrorists.h Creator/Creators.h Units/AbstractUnits.h Units/ConcreteUnits.h Information/PrintInfo.cpp Information/PrintInfo.h Decorator/Upgrades.h)
