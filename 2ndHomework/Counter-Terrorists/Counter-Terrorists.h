@@ -8,15 +8,11 @@ class CounterTerrorists {
 public:
     CounterTerrorists() = default;
     ~CounterTerrorists() = default;
-    void AddCTerrorist(std::string type);
-    void Info();
-    void GetDamage();
+    virtual void AddCTerrorist(std::string type);
+    virtual void Info();
+    virtual void GetDamage();
 
 private:
-    std::vector <Sapper*> sappers;
-    std::vector <CTStormTrooper*> cStormers;
-    std::vector <CTDoctor*> cDoctors;
-    std::vector <CTSniper*> cSnipers;
     std::vector <Unit*> allUnits;
     CounterCreator creator;
 };
