@@ -35,13 +35,14 @@ int main() {
     cout << endl << endl;
 
     // проверка паттерна Decorator
-    UnitForUpgrade* newUnit = new UnitForUpgrade;
-    Unit* upgradedUnit = new UpgradeHealth( new UpgradeHealth(new UpgradeDamage(newUnit)) );
-    cout << "Before upgrade:" << endl;
+    CTStormTrooper* newUnit = new CTStormTrooper;
+    Unit* upgradedUnit = new UpgradeDamage( new UpgradeDamage(new UpgradeHealth(newUnit)) );
+    cout << "Before update: " << endl;
     cout << "Health = " << newUnit->healthPoints << endl;
     cout << "Damage = " << newUnit->UnitDamage() << endl << endl;
     upgradedUnit->Upgrade();
     cout << "After upgrade:" << endl;
     cout << "Health = " << newUnit->healthPoints << endl;
     cout << "Damage = " << newUnit->UnitDamage() << endl << endl;
+
 }

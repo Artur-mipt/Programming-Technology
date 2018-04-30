@@ -2,23 +2,6 @@
 #include "../Units/AbstractUnits.h"
 #include <iostream>
 
-class UnitForUpgrade : public Unit {
-public:
-    UnitForUpgrade() {
-        weapon.damage = 30;
-        weapon.name = "knife";
-        healthPoints = 70;
-    }
-
-    int UnitDamage() override {
-        return weapon.damage;
-    }
-
-    void Upgrade() override {};
-
-};
-
-
 class UpgradeWrapper : public Unit {
 public:
     Unit* inner;
@@ -30,7 +13,6 @@ public:
     void Upgrade() override {
         inner->Upgrade();
     }
-
 };
 
 
