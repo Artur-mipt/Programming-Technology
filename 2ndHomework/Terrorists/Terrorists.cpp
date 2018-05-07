@@ -15,17 +15,17 @@ void Terrorists::AddTerrorist(std::string type) {
     }
 }
 
-void Terrorists::GetDamage() {
+int Terrorists::GetDamage() {
     int total = 0;
     for( int i = 0; i < allUnits.size(); i++ ) {
         total += allUnits[i]->UnitDamage();
     }
-    cout << total;
+    return total;
 }
 
 void Terrorists::Info() {
     std::cout << std::endl;
     std::cout << "-- Terrorists team --" << std::endl;
     std::cout << "total damage of team: ";
-    GetDamage();
+    cout << GetDamage();
 }

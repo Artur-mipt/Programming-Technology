@@ -10,7 +10,7 @@ public:
     ~Terrorists() = default;
     virtual void AddTerrorist(std::string type);
     virtual void Info();
-    virtual void GetDamage();
+    virtual int GetDamage();
 
 private:
     std::vector <Unit*> allUnits;

@@ -15,12 +15,12 @@ void CounterTerrorists::AddCTerrorist(std::string type) {
     }
 }
 
-void CounterTerrorists::GetDamage() {
+int CounterTerrorists::GetDamage() {
     int total = 0;
     for( int i = 0; i < allUnits.size(); i++ ) {
         total += allUnits[i]->UnitDamage();
     }
-    cout << total;
+    return total;
 }
 
 void CounterTerrorists::Info() {
