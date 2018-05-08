@@ -27,5 +27,5 @@ void CounterTerrorists::Info() {
     std::cout << std::endl;
     std::cout << "-- Counter-terrorists team --" << std::endl;
     std::cout << "total damage of team: ";
-    GetDamage();
+    cout << GetDamage();
 }

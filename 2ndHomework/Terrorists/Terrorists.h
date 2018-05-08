@@ -12,7 +12,6 @@ public:
     virtual void Info();
     virtual int GetDamage();
 
-private:
     std::vector <Unit*> allUnits;
     TerrCreator creator;
 };
