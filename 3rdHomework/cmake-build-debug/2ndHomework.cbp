@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="2ndHomework"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/artur/Programming Technology/3rdHomework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/artur/Programming Technology/3rdHomework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/artur/Programming Technology/3rdHomework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3rdHomework">
+				<Option output="/home/artur/Programming Technology/3rdHomework/cmake-build-debug/3rdHomework" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/artur/Programming Technology/3rdHomework/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 3rdHomework"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3rdHomework/fast">
+				<Option output="/home/artur/Programming Technology/3rdHomework/cmake-build-debug/3rdHomework" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/artur/Programming Technology/3rdHomework/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 3rdHomework/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/artur/Programming\ Technology/3rdHomework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Counter-Terrorists/Counter-Terrorists.cpp">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Counter-Terrorists/Counter-Terrorists.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Creator/Creators.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Decorator/Upgrades.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Gameplay/Gameplay.cpp">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Gameplay/Gameplay.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Information/PrintInfo.cpp">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Information/PrintInfo.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Proxy/ProxyCounterTerrorists.cpp">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Proxy/ProxyCounterTerrorists.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Proxy/ProxyTerrorists.cpp">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Proxy/ProxyTerrorists.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Terrorists/Terrorists.cpp">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Terrorists/Terrorists.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Testing/Testing.cpp">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Testing/Testing.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Units/AbstractUnits.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/Units/ConcreteUnits.h">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/main.cpp">
+			<Option target="3rdHomework"/>
+		</Unit>
+		<Unit filename="/home/artur/Programming Technology/3rdHomework/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
