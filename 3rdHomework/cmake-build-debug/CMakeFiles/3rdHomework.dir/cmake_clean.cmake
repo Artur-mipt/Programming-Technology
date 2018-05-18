@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/3rdHomework.dir/Proxy/ProxyCounterTerrorists.cpp.o"
   "CMakeFiles/3rdHomework.dir/Testing/Testing.cpp.o"
   "CMakeFiles/3rdHomework.dir/Gameplay/Gameplay.cpp.o"
+  "CMakeFiles/3rdHomework.dir/Command/Command.cpp.o"
   "3rdHomework.pdb"
   "3rdHomework"
 )

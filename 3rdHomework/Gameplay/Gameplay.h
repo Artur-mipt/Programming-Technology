@@ -1,4 +1,4 @@
-
+#pragma once
 #include "../Terrorists/Terrorists.h"
 
 class Gameplay {
@@ -11,4 +11,7 @@ public:
     void CounterAttack(int from, int to);
     void TerrHeal(int from, int to);
     void CounterHeal(int from, int to);
+    void AddingTerr(string s);
+    void AddingCounter(string s);
+    bool ThisIsTheEnd();
 };

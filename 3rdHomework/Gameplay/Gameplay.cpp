@@ -32,3 +32,15 @@ void Gameplay::CounterHeal(int from, int to) {
         }
     }
 }
+
+void Gameplay::AddingTerr(string s) {
+    player1->AddTerrorist(s);
+}
+
+void Gameplay::AddingCounter(string s) {
+    player2->AddCTerrorist(s);
+}
+
+bool Gameplay::ThisIsTheEnd() {
+    return !( player1->IsAlive() and player2->IsAlive() );
+}

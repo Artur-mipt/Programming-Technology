@@ -123,6 +123,33 @@ depend:
 	$(MAKE) -f CMakeFiles/3rdHomework.dir/build.make CMakeFiles/3rdHomework.dir/build
 .PHONY : 3rdHomework/fast
 
+Command/Command.o: Command/Command.cpp.o
+
+.PHONY : Command/Command.o
+
+# target to build an object file
+Command/Command.cpp.o:
+	$(MAKE) -f CMakeFiles/3rdHomework.dir/build.make CMakeFiles/3rdHomework.dir/Command/Command.cpp.o
+.PHONY : Command/Command.cpp.o
+
+Command/Command.i: Command/Command.cpp.i
+
+.PHONY : Command/Command.i
+
+# target to preprocess a source file
+Command/Command.cpp.i:
+	$(MAKE) -f CMakeFiles/3rdHomework.dir/build.make CMakeFiles/3rdHomework.dir/Command/Command.cpp.i
+.PHONY : Command/Command.cpp.i
+
+Command/Command.s: Command/Command.cpp.s
+
+.PHONY : Command/Command.s
+
+# target to generate assembly for a file
+Command/Command.cpp.s:
+	$(MAKE) -f CMakeFiles/3rdHomework.dir/build.make CMakeFiles/3rdHomework.dir/Command/Command.cpp.s
+.PHONY : Command/Command.cpp.s
+
 Counter-Terrorists/Counter-Terrorists.o: Counter-Terrorists/Counter-Terrorists.cpp.o
 
 .PHONY : Counter-Terrorists/Counter-Terrorists.o
@@ -348,6 +375,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 3rdHomework"
+	@echo "... Command/Command.o"
+	@echo "... Command/Command.i"
+	@echo "... Command/Command.s"
 	@echo "... Counter-Terrorists/Counter-Terrorists.o"
 	@echo "... Counter-Terrorists/Counter-Terrorists.i"
 	@echo "... Counter-Terrorists/Counter-Terrorists.s"

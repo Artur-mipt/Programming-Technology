@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/artur/Programming Technology/3rdHomework/Command/Command.cpp
+Command.h
+/home/artur/Programming Technology/3rdHomework/Command/Command.h
+
+/home/artur/Programming Technology/3rdHomework/Command/Command.h
+../Gameplay/Gameplay.h
+/home/artur/Programming Technology/3rdHomework/Gameplay/Gameplay.h
+
 /home/artur/Programming Technology/3rdHomework/Counter-Terrorists/Counter-Terrorists.cpp
 Counter-Terrorists.h
 /home/artur/Programming Technology/3rdHomework/Counter-Terrorists/Counter-Terrorists.h
@@ -117,4 +125,6 @@ Information/PrintInfo.h
 /home/artur/Programming Technology/3rdHomework/Information/PrintInfo.h
 Gameplay/Gameplay.h
 /home/artur/Programming Technology/3rdHomework/Gameplay/Gameplay.h
+Command/Command.h
+/home/artur/Programming Technology/3rdHomework/Command/Command.h
 

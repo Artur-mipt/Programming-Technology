@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Information/PrintInfo.h"
 #include "Gameplay/Gameplay.h"
+#include "Command/Command.h"
 
 using namespace std;
 
@@ -11,23 +12,34 @@ int main() {
     Terrorists* player1 = new Terrorists;
     CounterTerrorists* player2 = new  CounterTerrorists;
 
+    Gameplay* game = new Gameplay(player1, player2);
+
+    vector <Command*> commands;
+    vector <string> units;
+
     for( int i = 0; i < 5; i++ ) {
         cout << "Номер хода: " << i + 1 << endl;
-        cout << "Игрок 1, какого игрока добавить в комманду?" << endl;
-        string s1, s2;
-        cin >> s1;
-        player1->AddTerrorist(s1);
-        cout << "Игрок 2, какого игрока добавить в команду?" << endl;
-        cin >> s2;
-        player2->AddCTerrorist(s2);
+        cout << "Игрок 1, какого юнита добавить в комманду?" << endl;
+        string s;
+        cin >> s;
+        units.push_back(s);
+        commands.push_back( new AddingTerrCommand(game) );
+
+        cout << "Игрок 2, какого юнита добавить в команду?" << endl;
+        cin >> s;
+        units.push_back(s);
+        commands.push_back( new AddingCounterCommand(game) );
+    }
+
+    // паттерн Command воспроизводит создание команд
+    for( int i = 0; i < 10; i++ ) {
+        commands[i]->execute(units[i]);
     }
 
     info->AfterAddingUnits();
 
-    Gameplay* game = new Gameplay(player1, player2);
-
     int step = 1;
-    while( player1->IsAlive() && player2->IsAlive() ) {
+    while( !game->ThisIsTheEnd() ) {
         cout << "Номер хода: " << step << endl;
         step++;
 
