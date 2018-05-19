@@ -37,3 +37,7 @@ void PrintInfo::EndOfGame(Terrorists* player1, CounterTerrorists* player2) {
         cout << "Игрок 2";
     }
 }
+
+void PrintInfo::LongGame() {
+    cout << "Не хотите сыграть в расширенную версию (у всех юнитов увеличится хп)? (y/n)" << endl;
+}

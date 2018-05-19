@@ -1,6 +1,5 @@
 #pragma once
 #include "../Creator/Creators.h"
-#include "../Terrorists/Terrorists.h"
 #include <iostream>
 #include <vector>
 #include <string>

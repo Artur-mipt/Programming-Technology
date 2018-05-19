@@ -1,5 +1,6 @@
 #pragma once
 #include "../Terrorists/Terrorists.h"
+#include "../Counter-Terrorists/Counter-Terrorists.h"
 
 class Gameplay {
 public:

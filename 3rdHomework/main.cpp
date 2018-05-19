@@ -2,6 +2,7 @@
 #include "Information/PrintInfo.h"
 #include "Gameplay/Gameplay.h"
 #include "Command/Command.h"
+#include "Observer/Observer.h"
 
 using namespace std;
 
@@ -34,6 +35,18 @@ int main() {
     // паттерн Command воспроизводит создание команд
     for( int i = 0; i < 10; i++ ) {
         commands[i]->execute(units[i]);
+    }
+
+    info->LongGame();
+    string s;
+    cin >> s;
+    if( s == "y" ) {
+        Subject* subj = new Subject;
+        TerrObserver* terrObserver = new TerrObserver(player1);
+        CounterObserver* counterObserver = new CounterObserver(player2);
+        subj->add(terrObserver);
+        subj->add(counterObserver);
+        subj->update();
     }
 
     info->AfterAddingUnits();
