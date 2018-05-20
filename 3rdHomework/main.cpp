@@ -23,11 +23,13 @@ int main() {
         cout << "Игрок 1, какого юнита добавить в комманду?" << endl;
         string s;
         cin >> s;
+        s = game->CorrectTerrName(s);
         units.push_back(s);
         commands.push_back( new AddingTerrCommand(game) );
 
         cout << "Игрок 2, какого юнита добавить в команду?" << endl;
         cin >> s;
+        s = game->CorrectCounterName(s);
         units.push_back(s);
         commands.push_back( new AddingCounterCommand(game) );
     }
@@ -38,15 +40,18 @@ int main() {
     }
 
     info->LongGame();
-    string s;
-    cin >> s;
-    if( s == "y" ) {
-        Subject* subj = new Subject;
-        TerrObserver* terrObserver = new TerrObserver(player1);
-        CounterObserver* counterObserver = new CounterObserver(player2);
+    string isLongGame;
+    cin >> isLongGame;
+    if( isLongGame == "y" ) {
+        auto subj = new Subject;
+        auto terrObserver = new TerrObserver(player1);
+        auto counterObserver = new CounterObserver(player2);
         subj->add(terrObserver);
         subj->add(counterObserver);
         subj->update();
+        delete subj;
+        delete terrObserver;
+        delete counterObserver;
     }
 
     info->AfterAddingUnits();
@@ -60,20 +65,22 @@ int main() {
         int from, to;
         cout << "Игрок 2, Ваш ход:" << endl;
         cin >> s >> from >> to;
+        s = game->CheckStep(s);
         if( s == "Attack" ) {
-            game->CounterAttack(from, to);
+            game->CounterAttack(from - 1, to - 1);
         }
         if( s == "Heal" ) {
-            game->CounterHeal(from, to);
+            game->CounterHeal(from - 1, to - 1);
         }
 
         cout << "Игрок 1, Ваш ход:" << endl;
         cin >> s >> from >> to;
+        s = game->CheckStep(s);
         if( s == "Attack" ) {
-            game->TerrAttack(from, to);
+            game->TerrAttack(from - 1, to - 1);
         }
         if( s == "Heal" ) {
-            game->TerrHeal(from, to);
+            game->TerrHeal(from - 1, to - 1);
         }
     }
 

@@ -15,4 +15,7 @@ public:
     void AddingTerr(string s);
     void AddingCounter(string s);
     bool ThisIsTheEnd();
+    string CorrectTerrName(string s);
+    string CorrectCounterName(string s);
+    string CheckStep(string s);
 };
