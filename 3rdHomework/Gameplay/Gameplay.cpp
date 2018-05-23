@@ -5,11 +5,26 @@ Gameplay::Gameplay(Terrorists* terr, CounterTerrorists* counter) {
     player2 = counter;
 }
 
+bool Gameplay::IncorrectUnitNumber(int from, int to) {
+    try {
+        if( from > 4 || from < 0 ) {
+            throw from;
+        }
+        if( to > 4 || to < 0 ) {
+            throw to;
+        }
+    }
+    catch(int i) {
+        cout << "Грубейшая ошибка. Нет юнита с номером " << i + 1 << endl;
+        cout << "Юниты нумеруются от 1 до 5. Учтите это в дальнейшем" << endl;
+        return true;
+    }
+
+    return false;
+}
+
 void Gameplay::TerrAttack(int from, int to) {
-    if( from > 5 || from < 1 || to > 5 || to < 1 ) {
-        cout << "Грубейшая ошибка. Юниты нумеруются от 1 до 5. ";
-        cout << "Учтите это в следующих ходах" << endl;
-    } else {
+    if( !IncorrectUnitNumber(from, to) ) {
         if (player1->allUnits[from]->healthPoints > 0) {
             player2->allUnits[to]->healthPoints -= player1->allUnits[from]->UnitDamage();
         }
@@ -17,23 +32,17 @@ void Gameplay::TerrAttack(int from, int to) {
 }
 
 void Gameplay::CounterAttack(int from, int to) {
-    if( from > 5 || from < 1 || to > 5 || to < 1 ) {
-        cout << "Грубейшая ошибка. Юниты нумеруются от 1 до 5. ";
-        cout << "Учтите это в следующих ходах" << endl;
-    } else {
-        if (player2->allUnits[from]->healthPoints > 0) {
+    if( !IncorrectUnitNumber(from, to) ) {
+        if( player2->allUnits[from]->healthPoints > 0 ) {
             player1->allUnits[to]->healthPoints -= player2->allUnits[from]->UnitDamage();
         }
     }
 }
 
 void Gameplay::TerrHeal(int from, int to) {
-    if( from > 5 || from < 1 || to > 5 || to < 1 ) {
-        cout << "Грубейшая ошибка. Юниты нумеруются от 1 до 5. ";
-        cout << "Учтите это в следующих ходах" << endl;
-    } else {
-        if (player1->allUnits[from]->healthPoints > 0) {
-            if (player1->allUnits[to]->healthPoints > 0) {
+    if( !IncorrectUnitNumber(from, to) ) {
+        if( player1->allUnits[from]->healthPoints > 0 ) {
+            if( player1->allUnits[to]->healthPoints > 0 ) {
                 player1->allUnits[to]->healthPoints += 50;
             }
         }
@@ -41,12 +50,9 @@ void Gameplay::TerrHeal(int from, int to) {
 }
 
 void Gameplay::CounterHeal(int from, int to) {
-    if( from > 5 || from < 1 || to > 5 || to < 1 ) {
-        cout << "Грубейшая ошибка. Юниты нумеруются от 1 до 5. ";
-        cout << "Учтите это в следующих ходах" << endl;
-    } else {
-        if (player2->allUnits[from]->healthPoints > 0) {
-            if (player2->allUnits[to]->healthPoints > 0) {
+    if( !IncorrectUnitNumber(from, to) ) {
+        if( player2->allUnits[from]->healthPoints > 0 ) {
+            if( player2->allUnits[to]->healthPoints > 0 ) {
                 player2->allUnits[to]->healthPoints += 50;
             }
         }
@@ -83,9 +89,9 @@ string Gameplay::CorrectCounterName(string s) {
     return s;
 }
 
-string CheckStep(string s) {
+string Gameplay::CheckStep(string s) {
     while( s != "Attack" && s != "Heal" ) {
-        cout << "Действие введено неверно";
+        cout << "Действие введено неверно. ";
         cout << "Попробуйте еще раз (введите Attack или Heal):" << endl;
         cin >> s;
     }

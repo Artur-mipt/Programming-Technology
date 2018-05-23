@@ -18,4 +18,6 @@ public:
     string CorrectTerrName(string s);
     string CorrectCounterName(string s);
     string CheckStep(string s);
+
+    bool IncorrectUnitNumber(int from, int to);
 };
